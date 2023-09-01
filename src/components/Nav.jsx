@@ -12,5 +12,14 @@ function Nav() {
             className={currentPg === "/" ? "is-active" : ""}>
             <Link to="/">About Me</Link>
         </li>
+        <li className={currentPg === "/ContactMe" ? "is-active" : ""}>
+            <Link to="/ContactMe">Contact Me</Link>
+        </li>
+        <li className={currentPg === "/Portfolio" ? "is-active" : ""}>
+            <Link to="/Portfolio">Portfolio</Link>
+        </li>
+        <li className={currentPg === "/Resume" ? "is-active" : ""}>
+            <Link to="/Resume">Resume</Link>
+        </li>
     </ul>
 }
