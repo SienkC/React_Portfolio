@@ -5,7 +5,7 @@ function Nav() {
     // get current page by looking at URL
     const currentPg = useLocation().pathname;
 
-    return(
+    return (
         // assign each nav item its appropriate link
         <ul className="tabs is-right is-large">
             <li 

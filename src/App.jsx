@@ -7,8 +7,7 @@ import Nav from './components/Nav';
 
 // function to return navigation and whichever page is selected
 function App() {
-    return
-    (
+    return (
         <>
             <Nav />
             <Outlet />
