@@ -42,3 +42,8 @@ const router = createBrowserRouter([
     }
 ]);
 
+// Router provider component
+// renders in div element with id='root' in index.html
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <RouterProvider router={router} />
+)
