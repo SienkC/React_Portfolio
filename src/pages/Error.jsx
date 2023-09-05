@@ -1,9 +1,9 @@
 // import route error from react dom
-import { userRouteError } from 'react-router-dom';
+import { useRouteError } from 'react-router-dom';
 
 export default function Error() {
     // get the error from react
-    const err = userRouteError();
+    const err = useRouteError();
 
     // return error page
     return (
