@@ -61,7 +61,7 @@ function ContactForm(props) {
 
     return (
         <div>
-            <form className="box has-background-info-light" onSubmit={handleSubmit}>
+            <form className="container box has-background-info-light" onSubmit={handleSubmit}>
                 <label className="help is-danger" id="nameWarn"></label>
                 <input className="input m-2" id="name"
                     type="text"
@@ -89,7 +89,7 @@ function ContactForm(props) {
                     onChange={handleInputChange}
                 >
                 </textarea>
-                <button className="m-3 button is-info" type="submit">Send</button>
+                <button className="m-3 button has-background-info-dark has-text-info-light" type="submit">Send</button>
             </form>
         </div>
     );
