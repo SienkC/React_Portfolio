@@ -7,35 +7,6 @@ function ContactForm(props) {
     const [email, setEmail] = useState('');
     const [text, setText] = useState('');
 
-    // // to prevent validation on first load
-    // useEffect(() => {
-    //     document.getElementById('name').style.borderColor = '';
-    // }, []);
-
-    // // validate inputs
-    // useEffect(() => {
-    //     console.log(name);
-
-    //     if(name == '') {
-    //         const error = document.createElement('div');
-    //         // give id of error
-    //         error.setAttribute('id', 'error');
-
-    //         // warning for user
-    //         error.innerHTML = 'Fill in the highlighted fields';
-    //         error.style.color = 'red';
-    //         document.getElementById('name').prepend(error);
-    //         document.getElementById('name').style.borderColor = 'red';
-    //     }
-    //     else {
-    //         const error = document.getElementById('error');
-    //         if (error) {
-    //             error.remove();
-    //         }
-    //         document.getElementById('name').style.borderColor = '';
-    //     }
-    // });
-
     // function for submit button
     const handleSubmit = (e) => {
         // keep page from refreshing early
@@ -67,7 +38,8 @@ function ContactForm(props) {
             // e.target.placeholder = 'Fill in the field before submitting!'
         }
         else {
-            
+            e.target.previousElementSibling.innerHTML = '';
+            e.target.style.borderColor = '';
         }
 
         if (name === 'name') {
