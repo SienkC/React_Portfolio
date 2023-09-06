@@ -28,6 +28,12 @@ React portfolio of work samples
 
   View the site: [Portfolio](https://capable-fairy-7d729c.netlify.app/)
 
+  Screenshots:
+  ![Home Page](./public/assets/images/home_page.png)
+  ![Contact Page](./public/assets/images/contact_page.png)
+  ![Portfolio Page](./public/assets/images/portfolio_page.png)
+  ![Resume Page](./public/assets/images/resume_page.png)
+
   ## Credits <a id="credits"></a>
 
   Base code provided by the boot camp creators at [UCF Boot Camps](https://bootcamp.ce.ucf.edu/).
