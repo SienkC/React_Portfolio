@@ -1,7 +1,7 @@
 export default function AboutMe() {
     // returns content for About Me page
     return (
-        <div className="container columns is-mobile is-multiline is-centered">
+        <div className="container columns is-mobile is-multiline is-centered box has-background-info-light">
             <figure className="image column is-3">
                 <img className="is-rounded" src="../assets/images/Avatar.jpg" alt="Avatar to represent Courtney"></img>
             </figure>

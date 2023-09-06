@@ -1,7 +1,7 @@
 export default function Footer() {
     // returns Footer links page
     return (
-        <div className="container">
+        <div className="container ">
             <ul className="level">
                 <li className="level-item has-text-centered">
                     <p>Phone:&ensp;</p>

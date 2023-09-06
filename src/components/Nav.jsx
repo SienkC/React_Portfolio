@@ -7,7 +7,7 @@ function Nav() {
 
     return (
         // assign each nav item its appropriate link
-        <ul className="tabs is-right is-large">
+        <ul className="tabs is-boxed is-right is-large navbar is-fixed-top">
             <li 
                 // If current page is AboutMe, then css will match
                 className={currentPg === "/" ? "is-active" : ""}>
