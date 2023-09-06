@@ -14,11 +14,17 @@ function ContactForm(props) {
 
         // check if email is valid
         // make sure all forms have been filed out
+        if (true) {
+            alert('Please fill in all the form elements correctly before submitting!');
+        }
 
-        // empty current forms
-        setName('');
-        setEmail('');
-        setText('');
+        else {
+            // empty current forms
+            setName('');
+            setEmail('');
+            setText('');
+        }
+        
     };
 
     const handleInputChange = (e) => {
