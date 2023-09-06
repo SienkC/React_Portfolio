@@ -25,17 +25,8 @@ function ContactForm(props) {
         const { name, value } = e.target;
 
         if (value === '') {
-            const error = document.createElement('div');
-            // give id of error
-            error.setAttribute('id', 'error');
-
-            // warning for user
-            error.innerHTML = 'Fill in the highlighted fields';
-            error.style.color = 'red';
-            // e.target.prepend(error);
-            e.target.previousElementSibling.innerHTML = 'Enter your name!';
+            e.target.previousElementSibling.innerHTML = 'Field required!';
             e.target.style.borderColor = 'red';
-            // e.target.placeholder = 'Fill in the field before submitting!'
         }
         else {
             e.target.previousElementSibling.innerHTML = '';
@@ -44,6 +35,13 @@ function ContactForm(props) {
 
         if (name === 'name') {
             setName(value);
+        }
+        else if (name === 'email') {
+            // add extra check for valid email
+            setEmail(value);
+        }
+        else {
+            setText(value);
         }
         return;
     }
@@ -66,7 +64,7 @@ function ContactForm(props) {
                     name="email"
                     placeholder="Enter Your Email"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={handleInputChange}
                 >
                 </input>
                 <label id="textWarn"></label>
@@ -75,7 +73,7 @@ function ContactForm(props) {
                     name="text"
                     placeholder="Enter Your Comment"
                     value={text}
-                    onChange={(e) => setText(e.target.value)}
+                    onChange={handleInputChange}
                 >
                 </textarea>
                 <button type="submit">Send</button>
