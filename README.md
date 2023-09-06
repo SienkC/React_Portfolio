@@ -26,6 +26,8 @@ React portfolio of work samples
 
   To use the Portfolio page, load webpage and view each section by clicking the corresponding name in the navigation at the top of the page. When in the 'Portfolio' section, view the webpages embeded in the page, or click on the boxes to be directed to the webpage that corresponds with its label. When in the 'Contact Me' section, fill in the required fields and click send.
 
+  View the site: [Portfolio](https://capable-fairy-7d729c.netlify.app/)
+
   ## Credits <a id="credits"></a>
 
   Base code provided by the boot camp creators at [UCF Boot Camps](https://bootcamp.ce.ucf.edu/).
