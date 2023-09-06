@@ -33,12 +33,21 @@ function ContactForm(props) {
             e.target.style.borderColor = '';
         }
 
+        // set value of input item depending on the target typed into
         if (name === 'name') {
             setName(value);
         }
         else if (name === 'email') {
-            // add extra check for valid email
             setEmail(value);
+
+            // add extra check for valid email using regex
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            // show warning if email is not valid
+            if(!emailRegex.test(email)) {
+                e.target.previousElementSibling.innerHTML = 'Enter a valid email!';
+                e.target.style.borderColor = 'red';
+            }
         }
         else {
             setText(value);
