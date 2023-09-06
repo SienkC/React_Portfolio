@@ -1,11 +1,37 @@
 // import ability to use state for the form
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function ContactForm(props) {
     // set up input values as state elements
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [text, setText] = useState('');
+
+    
+
+    // validate inputs
+    useEffect(() => {
+        console.log(name);
+
+        if(name == '') {
+            const error = document.createElement('div');
+            // give id of error
+            error.setAttribute('id', 'error');
+
+            // warning for user
+            error.innerHTML = 'Fill in the highlighted fields';
+            error.style.color = 'red';
+            document.getElementById('name').prepend(error);
+            document.getElementById('name').style.borderColor = 'red';
+        }
+        else {
+            const error = document.getElementById('error');
+            if (error) {
+                error.remove();
+            }
+            document.getElementById('name').style.borderColor = '';
+        }
+    });
 
     // function for submit button
     const handleSubmit = (e) => {
@@ -24,21 +50,21 @@ function ContactForm(props) {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input
+                <input id="name"
                     type="text"
                     placeholder="Enter Your Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 >
                 </input>
-                <input
+                <input id="email"
                     type="text"
                     placeholder="Enter Your Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 >
                 </input>
-                <textarea cols="30" rows="10"
+                <textarea id="text"
                     type="text"
                     placeholder="Enter Your Comment"
                     value={text}
@@ -51,11 +77,4 @@ function ContactForm(props) {
     );
 }
 
-export default function ContactMe() {
-    // return form for Contact Me page
-    return (
-        <div>
-
-        </div>
-    );
-}
+export default ContactForm;
