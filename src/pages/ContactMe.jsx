@@ -12,12 +12,10 @@ function ContactForm(props) {
         // keep page from refreshing early
         e.preventDefault();
 
-        // check if email is valid
-        // make sure all forms have been filed out
-        if (true) {
+        // check if email is valid and make sure all forms have been filed out
+        if (!name || !email || !text || document.getElementById('emailWarn').innerHTML !== "") {
             alert('Please fill in all the form elements correctly before submitting!');
         }
-
         else {
             // empty current forms
             setName('');
