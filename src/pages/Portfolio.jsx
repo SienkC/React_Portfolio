@@ -3,6 +3,14 @@ export default function Portfolio() {
     return (
     <div>
         <div className="container box has-background-info-light columns is-mobile is-multiline is-centered">
+        <a className="box has-background-info-dark column is-9" href="" id="zero-proof">
+                <div className="workLabel">
+                    <h4 className="has-text-centered has-text-info-light is-size-1">Zero-Proof</h4>
+                    <p className="has-text-centered has-text-info-light is-size-4">MERN</p>
+                    <iframe className="image" style={{width: "100%", height: "50vh"}} src="https://guarded-river-60488-2757545d4c45.herokuapp.com/"></iframe>
+                    <p className="has-text-right"><a className="m-2 has-text-info-light is-size-5" href="https://guarded-river-60488-2757545d4c45.herokuapp.com/">View Repository on GitHub</a></p>
+                </div>
+            </a>
             <a className="box has-background-info-dark column is-9" href="https://sienkc.github.io/The_Comic_Vault/" id="largeEx">
                 <div className="workLabel">
                     <h4 className="has-text-centered has-text-info-light is-size-1">The Comic Vault</h4>
