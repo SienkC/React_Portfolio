@@ -1,0 +1,9 @@
+/* Initially hide the additional content */
+.hidden-content {
+  display: none;
+}
+
+/* Define the hover effect */
+.card:hover .hidden-content {
+  display: block;
+}
