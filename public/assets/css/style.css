@@ -11,4 +11,7 @@
   justify-content: center;
   /* Vertically center */
   align-items: center;
+  /* Black background with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5); 
 }
+

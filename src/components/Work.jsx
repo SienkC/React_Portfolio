@@ -2,21 +2,21 @@ const Work = ({
     item
 }) => {
     return (
-        <div className="card" >
-            <div className="card-image card-content">
+        <div className="card m-1" >
+            <div className="card-image card-content p-0">
                 <figure className="image">
-                    <img className="image" style={{ width: "100%", height: "50vh" }} src={"../assets/images/" + item.image}></img>
+                    <img style={{ width: "100%", height: "50vh" }} src={"../assets/images/" + item.image}></img>
                 </figure>
             </div>
             <div className="card-content is-overlay hidden-content">
-                <span className="">
+                <span className="transparent">
                     <div className="workLabel">
-                        <h4 className="has-text-centered has-text-info is-size-1">{item.name}</h4>
-                        <p className="has-text-centered has-text-info is-size-4">{item.tech}</p>
-                        <p className="has-text-centered has-text-info is-size-4">{item.summary}</p>
+                        <h4 className="has-text-centered has-text-info is-size-2">{item.name}</h4>
+                        <p className="has-text-centered has-text-info is-size-5">{item.tech}</p>
+                        <p className="has-text-centered has-text-info is-size-5">{item.summary}</p>
                         <div className="columns">
-                            <p className="column has-text-left"><a className="m-2 has-text-info is-size-5" href={item.deployed}>View Deployed Website</a></p>
-                            <p className="column has-text-right"><a className="m-2 has-text-info is-size-5" href={item.repo}>View Repository on GitHub</a></p>
+                            <p className="column has-text-left"><a className="m-2 button has-text-info is-size-6" href={item.deployed}>View Deployed Website</a></p>
+                            <p className="column has-text-right"><a className="m-2 button has-text-info is-size-6" href={item.repo}>View Repository on GitHub</a></p>
                         </div>
                     </div>
                 </span>
