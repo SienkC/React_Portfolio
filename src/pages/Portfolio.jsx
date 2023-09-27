@@ -8,7 +8,7 @@ export default function Portfolio() {
     <div>
         <div className="container box has-background-info-light columns is-mobile is-multiline is-centered">
             {works.map((item) => (
-                <Work item={item} key={item.name} />
+                <Work item={item} key={item.name} className="columns is-full-mobile" />
             ))}
         </div>
     </div>

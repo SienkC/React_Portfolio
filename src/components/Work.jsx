@@ -2,24 +2,22 @@ const Work = ({
     item
 }) => {
     return (
-        <div className="card m-1" >
+        <div className="column is-three-quarters card m-3 p-0" >
             <div className="card-image card-content p-0">
                 <figure className="image">
-                    <img style={{ width: "100%", height: "50vh" }} src={"../assets/images/" + item.image}></img>
+                    <img src={"../assets/images/" + item.image}></img>
                 </figure>
             </div>
             <div className="card-content is-overlay hidden-content">
-                <span className="transparent">
-                    <div className="workLabel">
-                        <h4 className="has-text-centered has-text-info is-size-2">{item.name}</h4>
-                        <p className="has-text-centered has-text-info is-size-5">{item.tech}</p>
-                        <p className="has-text-centered has-text-info is-size-5">{item.summary}</p>
-                        <div className="columns">
-                            <p className="column has-text-left"><a className="m-2 button has-text-info is-size-6" href={item.deployed}>View Deployed Website</a></p>
-                            <p className="column has-text-right"><a className="m-2 button has-text-info is-size-6" href={item.repo}>View Repository on GitHub</a></p>
-                        </div>
+                <div className="workLabel">
+                    <h4 className="has-text-centered has-text-info-light is-size-2 is-size-6-mobile">{item.name}</h4>
+                    <p className="has-text-centered has-text-info-light is-size-5 is-size-7-mobile">{item.tech}</p>
+                    <p className="has-text-centered has-text-info-light is-size-5 is-size-7-mobile">{item.summary}</p>
+                    <div className="columns is-mobile">
+                        <p className="column has-text-left"><a className="m-2 button has-background-info-light has-text-info-dark is-size-6 is-size-8-mobile" href={item.deployed}>View Deployed Website</a></p>
+                        <p className="column has-text-right"><a className="m-2 button has-background-info-light has-text-info-dark is-size-6 is-size-8-mobile" href={item.repo}>View Repository on GitHub</a></p>
                     </div>
-                </span>
+                </div>
             </div>
         </div>
     );
