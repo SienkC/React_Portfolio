@@ -6,4 +6,9 @@
 /* Define the hover effect */
 .card:hover .hidden-content {
   display: block;
+  display: flex;
+  /* Horizontally center */
+  justify-content: center;
+  /* Vertically center */
+  align-items: center;
 }

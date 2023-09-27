@@ -29,7 +29,7 @@ const Work = ({
                 </figure>
             </div>
             <div className="card-content is-overlay hidden-content">
-                <span className="tag is-primary ">Image label on overlay</span>
+                <span className="tag is-info ">Image label on overlay</span>
             </div>
         </div>
     );
