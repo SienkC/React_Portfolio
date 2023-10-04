@@ -3,7 +3,7 @@ export default function AboutMe() {
     return (
         <div className="container columns is-mobile is-multiline is-centered box has-background-info-light">
             <figure className="image column is-3">
-                <img className="is-rounded" src="../assets/images/Avatar.jpg" alt="Avatar to represent Courtney"></img>
+                <img className="is-rounded" src="../assets/images/professional photo1.jpg" alt="Avatar to represent Courtney"></img>
             </figure>
             <p className="column is-10">
                         Hello, I am Courtney Sienkiewich, a developing developer currently based in Orlando, FL. 
