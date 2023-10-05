@@ -8,11 +8,11 @@ export default function AboutMe() {
             <p className="column is-10">
                         Hello, I am Courtney Sienkiewich, a developing developer currently based in Orlando, FL. 
                         At the moment I am going through a course with UCF Bootcamps to grow in full stack development.
-                        Check out the work section below to see projects I have worked on.
+                        Check out the portfolio section to see projects I have worked on.
                         <br></br><br></br>
                         When I'm not coding, I like to spend my time drawing, exploring the farmers' market, or 
                         expanding my ever growing comic book collection. Feel free to check out my contact information 
-                        at the bottom of the page to reach out!
+                        at the bottom of the page or use the Contact Me page to reach out!
             </p>
         </div>
     );
